@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Thrift</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1 class="logo">GANDA NG THRIFT</h1>
+
+    <div class="header-right">
+        <input type="text" id="searchInput" placeholder="Search..." class="search-bar">
+        <button id="darkToggle">🌙</button>
+        <button id="cartBtn">🛒 <span id="cartCount">0</span></button>
+    </div>
+</header>
+
+<!-- CATEGORIES -->
+<section class="categories">
+    <button data-filter="all" class="cat-btn active">All</button>
+    <button data-filter="vintage" class="cat-btn">Vintage</button>
+    <button data-filter="streetwear" class="cat-btn">Streetwear</button>
+    <button data-filter="Pants" class="cat-btn">Cargo</button>
+    <button data-filter="jackets" class="cat-btn">Jackets</button>
+</section>
+
+<!-- FEATURED -->
+<section class="featured">
+    <h2>Featured Items</h2>
+    <div class="grid">
+        <div class="product-card" data-category="vintage">
+            <img src="picsss/light denim jacket.jpg">
+            <h3>Vintage Light Denim Jacket</h3>
+            <p>₱350</p>
+            <button onclick="addToCart('Vintage Llight Denim Jacket', 350)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-category="Pants">
+            <img src="picsss/camouflage cargo.jpg">
+            <h3>Camouflage Cargo Pants</h3>
+            <p>₱280</p>
+            <button onclick="addToCart('Camouflage Cargo Pants', 280)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-category="streetwear">
+            <img src="picsss/nike gray sweater.jpg">
+            <h3>Nike Gray Sweater</h3>
+            <p>₱120</p>
+            <button onclick="addToCart('Nike Gray Sweater', 120)">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<!-- MAIN PRODUCTS -->
+<section class="products">
+    <h2>All Products</h2>
+    <div class="grid">
+
+        <div class="product-card" data-category="jackets">
+            <img src="picsss/adidas all over logo hoodie.jfif">
+            <h3>Adidas All Over Logo Hoodie</h3>
+            <p>₱350</p>
+            <button onclick="addToCart('Adidas All Over Logo Hoodie', 350)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-category="Pants">
+            <img src="picsss/denim wildleg pants.jfif">
+            <h3>Carpenter Denim Wildleg Pants</h3>
+            <p>₱280</p>
+            <button onclick="addToCart('Carpenter Denim Wildleg Pants', 280)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-category="streetwear">
+            <img src="picsss/carhartt beanie.jpg">
+            <h3>Carhartt Beanie</h3>
+            <p>₱120</p>
+            <button onclick="addToCart('Carhartt Beanie', 120)">Add to Cart</button>
+        </div>
+        <div class="product-card" data-category="Pants">
+    <img src="picsss/denim jorts.jpg">
+    <h3>Dickies Denim Jorts</h3>
+    <p>₱350</p>
+    <button onclick="addToCart('Dickies Denim Jorts', 350)">Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="streetwear">
+    <img src="picsss/champion windbreaker.jpg">
+    <h3>Champion WindBreker</h3>
+    <p>₱320</p>
+    <button onclick="addToCart('Champion WindBreker', 320)">Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="Pants">
+    <img src="picsss/nike tracker pants.jpg">
+    <h3>Nike Tracker Pants</h3>
+    <p>₱220</p>
+    <button onclick="addToCart('Nike Tracker Pants', 220)">Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="streetwear">
+    <img src="picsss/lacoste oxford polo longsleeve.jpg">
+    <h3>Lacoste Oxford Polo longsleeve</h3>
+    <p>₱300</p>
+    <button onclick="addToCart('Lacoste Oxford Polo longsleeve', 300)">Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="streetwear">
+    <img src="picsss/nike big woosh.jpg">
+    <h3>Nike Big Woosh WindBreaker</h3>
+    <p>₱460</p>
+    <button onclick="addToCart('Nike Big Woosh WindBreaker', 460)">Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="streetwear">
+<img src="picsss/nike outdoor.jpg">
+    <h3>Nike Outdoor Windbreaker</h3>
+    <p>₱440</p>
+    <button onclick="addToCart('Nike Outdoor Windbreaker', 440)">Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="vintage">
+    <img src="picsss/vtg nike wind breaker.jpg">
+    <h3>Vintage Nike WindBreaker</h3>
+    <p>₱290</p>
+    <button onclick="addToCart('Vintage Nike WindBreaker', 290)">Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="vintage">
+    <img src="picsss/vtg nike windbreaker.jpg">
+    <h3>Vintage WindBreaker(Made in Philippines)</h3>
+    <p>₱380</p>
+    <button onclick="addToCart('Vintage WindBreaker(Made in Philippines)', 380)">Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="Pants">
+    <img src="picsss/wash jorts.jpg">
